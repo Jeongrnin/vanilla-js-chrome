@@ -1,15 +1,161 @@
+@font-face {
+  font-family: "SBAggroB";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "NEXON Lv1 Gothic OTF";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "omyu_pretty";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-01@1.0/omyu_pretty.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  display: block;
+  position: relative;
+  margin: 120px 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.today {
+  position: absolute;
+  top: 70px;
+  left: 545px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100px;
+}
+
+#form {
+  position: absolute;
+  top: 120px;
+  left: 1000px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+#clock {
+  color: white;
+  margin-top: -15px;
+  font-size: 185px;
+  font-family: "SBAggroB";
+  text-align: center;
+  opacity: 70%;
+}
+
+#date {
+  color: white;
+  font-size: 28px;
+  font-family: "SBAggroB";
+  text-align: center;
+}
+
+#weather {
+  position: absolute;
+  top: 40px;
+  left: 550px;
+  margin-top: -50px;
+  margin-bottom: 70px;
+  font-family: "NEXON Lv1 Gothic OTF";
+  text-align: center;
+  width: 300px;
+}
+
+#login-form input,
+#todo-form input {
+  width: 300px;
+  margin: 5px 0px;
+  padding: 15px 20px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid black;
+  color: black;
+  font-size: 15px;
+  font-weight: 500;
+  text-align: center;
+  font-family: "NEXON Lv1 Gothic OTF";
+}
+
+#greeting {
+  margin-top: -10px;
+  margin-bottom: 50px;
+  font-size: 50px;
+  font-family: "SBAggroB";
+  text-align: center;
+}
+
+#quote {
+  width: 350px;
+  text-align: center;
+  font-family: "omyu_pretty";
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+#quote span:last-child {
+  font-size: 17x;
+  font-family: "SBAggroB";
+}
+
+ul {
+  height: 200px;
+  list-style: none;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  padding-inline-start: 40px;
+}
+
+#todo-list > li {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  list-style: none;
+  padding: 10px 5px;
+}
+
+#todo-list > li > button {
+  margin-right: 10px;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  border: none;
+  border-radius: 50%;
+}
+
 .hidden {
   display: none;
 }
 
 img {
   position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 0px;
-  top: 0px;
+  width: 730px;
+  height: 650px;
+  border-radius: 30px;
+  left: 120px;
+  top: 20px;
   right: 0px;
   bottom: 0px;
   z-index: -1;
-  opacity: 50%;
+  opacity: 80%;
 }
